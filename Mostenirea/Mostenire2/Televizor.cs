@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mostenirea.Mostenire2
 {
-    internal class Televizor:Electronice
+    public class Televizor:Electronice
     {
 
         private int dimensiuneCm;

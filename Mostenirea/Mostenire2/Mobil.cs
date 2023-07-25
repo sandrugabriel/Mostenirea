@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mostenirea.Mostenire2
 {
-    internal class Mobil:Electronice
+    public class Mobil:Electronice
     {
 
         private double inch;

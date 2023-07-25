@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mostenirea.Mostenire2
 {
-    internal class SmartWatch:Electronice
+    public class SmartWatch:Electronice
     {
 
         private double inch;
