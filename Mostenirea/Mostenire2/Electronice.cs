@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace Mostenirea.Mostenire2
 {
-    internal class Electronice
+    public class Electronice
     {
 
         protected string brandul;
         protected int anul;
-
-
-
 
         public Electronice(string brandul)
         {

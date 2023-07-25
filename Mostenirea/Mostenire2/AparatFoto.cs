@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mostenirea.Mostenire2
 {
-    internal class AparatFoto:Electronice
+    public class AparatFoto:Electronice
     {
 
         private int dimensuneDisplay;

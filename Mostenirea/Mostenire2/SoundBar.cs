@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mostenirea.Mostenire2
 {
-    internal class SoundBar:Electronice
+    public class SoundBar:Electronice
     {
 
         private int nrCanale;
