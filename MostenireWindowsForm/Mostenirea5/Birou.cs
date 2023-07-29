@@ -10,11 +10,11 @@ namespace MostenireWindowsForm.Mostenirea5
     internal class Birou : Mobila
     {
 
-        private int inaltime;
-        private int lungime;
-        private int lagime;
+        private double inaltime;
+        private double lungime;
+        private double lagime;
 
-        public Birou(string type, int id, int pret, int inaltime, int lungime, int lagime) : base(type, id, pret)
+        public Birou(string type, int id, int pret, double inaltime, double lungime, double lagime) : base(type, id, pret)
         {
 
             this.inaltime = inaltime;
@@ -27,25 +27,25 @@ namespace MostenireWindowsForm.Mostenirea5
 
             string[] prop = text.Split(',');
 
-            this.inaltime = int.Parse(prop[3]);
-            this.lungime = int.Parse(prop[4]);
-            this.lagime = int.Parse(prop[5]);
+            this.inaltime = double.Parse(prop[3]);
+            this.lungime = double.Parse(prop[4]);
+            this.lagime = double.Parse(prop[5]);
 
         }
 
-        public int Inaltime
+        public double Inaltime
         {
             get { return this.inaltime; }
             set { this.inaltime = value; }
         }
 
-        public int Lungime
+        public double Lungime
         {
             get { return this.lungime; }
             set { this.lungime = value;}
         }
 
-        public int Lagime
+        public double Lagime
         {
             get { return this.lagime; }
             set { this.lagime = value; }
