@@ -11,10 +11,10 @@ namespace MostenireWindowsForm.Mostenirea5
     {
 
         private bool oglinda;
-        private int inaltime;
-        private int lungime;
+        private double inaltime;
+        private double lungime;
 
-        public Dulap(string type, int id,int pret, bool oglinda, int inaltime, int lungime):base(type,id, pret)
+        public Dulap(string type, int id,int pret, bool oglinda, double inaltime, double lungime):base(type,id, pret)
         {
             this.oglinda = oglinda;
             this.inaltime = inaltime;
@@ -26,8 +26,8 @@ namespace MostenireWindowsForm.Mostenirea5
             string[] prop = text.Split(',');
 
             this.oglinda = bool.Parse(prop[3]);
-            this.inaltime = int.Parse(prop[4]);
-            this.lungime = int.Parse(prop[5]);
+            this.inaltime = double.Parse(prop[4]);
+            this.lungime = double.Parse(prop[5]);
 
         }
 
@@ -37,13 +37,13 @@ namespace MostenireWindowsForm.Mostenirea5
             set { this.oglinda = value;}
         }
 
-        public int Inaltime
+        public double Inaltime
         {
             get { return this.inaltime;}
             set { this.inaltime = value;}
         }
 
-        public int Lungime
+        public double Lungime
         {
             get { return this.lungime;}
             set { this.lungime = value;}

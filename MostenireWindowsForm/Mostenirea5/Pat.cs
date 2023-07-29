@@ -9,10 +9,10 @@ namespace MostenireWindowsForm.Mostenirea5
     internal class Pat : Mobila
     {
 
-        private int lungime;
-        private int latime;
+        private double lungime;
+        private double latime;
 
-        public Pat(string type, int id, int lungime, int latime, int pret):base(type,id,pret)
+        public Pat(string type, int id, double lungime, double latime, int pret):base(type,id,pret)
         {
             this.lungime = lungime;
             this.latime = latime;
@@ -23,18 +23,18 @@ namespace MostenireWindowsForm.Mostenirea5
 
             string[] prop = text.Split(',');
 
-            this.lungime = int.Parse(prop[3]);
-            this.latime = int.Parse(prop[4]);
+            this.lungime = double.Parse(prop[3]);
+            this.latime = double.Parse(prop[4]);
 
         }
 
-        public int Lungime
+        public double Lungime
         {
             get { return lungime; }
             set { lungime = value; }
         }
 
-        public int Latime
+        public double Latime
         {
             get { return latime; }
             set { latime = value; }
