@@ -52,6 +52,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mockups\MockupBirou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockups\MockupBirou.Designer.cs">
+      <DependentUpon>MockupBirou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mockups\MockupCardPat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockups\MockupCardPat.Designer.cs">
+      <DependentUpon>MockupCardPat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mockups\MockupComoda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockups\MockupComoda.Designer.cs">
+      <DependentUpon>MockupComoda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mockups\MockupDulap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockups\MockupDulap.Designer.cs">
+      <DependentUpon>MockupDulap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mostenirea5\Birou.cs" />
     <Compile Include="Mostenirea5\Comoda.cs" />
     <Compile Include="Mostenirea5\ControllerMobila.cs" />
@@ -60,6 +84,18 @@
     <Compile Include="Mostenirea5\Pat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Mockups\MockupBirou.resx">
+      <DependentUpon>MockupBirou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mockups\MockupCardPat.resx">
+      <DependentUpon>MockupCardPat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mockups\MockupComoda.resx">
+      <DependentUpon>MockupComoda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mockups\MockupDulap.resx">
+      <DependentUpon>MockupDulap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -81,6 +117,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Panels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
