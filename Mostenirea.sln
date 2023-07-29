@@ -5,7 +5,9 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mostenirea", "Mostenirea\Mostenirea.csproj", "{C6DEA842-0307-4BF8-93FF-C40761AC8E11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste", "ExBazaRetineDerivata\Teste.csproj", "{78BBBD52-1FBB-4202-9327-CF20BBA61CD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste", "ExBazaRetineDerivata\Teste.csproj", "{78BBBD52-1FBB-4202-9327-CF20BBA61CD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostenireWindowsForm", "MostenireWindowsForm\MostenireWindowsForm.csproj", "{F8C18742-103F-4192-8BCE-BBD68B96CBB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{78BBBD52-1FBB-4202-9327-CF20BBA61CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78BBBD52-1FBB-4202-9327-CF20BBA61CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78BBBD52-1FBB-4202-9327-CF20BBA61CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8C18742-103F-4192-8BCE-BBD68B96CBB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C18742-103F-4192-8BCE-BBD68B96CBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C18742-103F-4192-8BCE-BBD68B96CBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C18742-103F-4192-8BCE-BBD68B96CBB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

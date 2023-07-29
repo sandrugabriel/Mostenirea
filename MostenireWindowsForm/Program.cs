@@ -1,10 +1,11 @@
-﻿using System;
+﻿using MostenireWindowsForm.Mostenirea5;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MostenireaWindowsForm
+namespace MostenireWindowsForm
 {
     internal static class Program
     {
@@ -14,9 +15,13 @@ namespace MostenireaWindowsForm
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+           /* Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form1());*/
+                
+            ControllerMobila controllerMobila = new ControllerMobila();
+            controllerMobila.afisare();
+
         }
     }
 }

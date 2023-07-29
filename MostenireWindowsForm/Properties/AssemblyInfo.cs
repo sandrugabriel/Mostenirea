@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MostenireaWindowsForm")]
+[assembly: AssemblyTitle("MostenireWindowsForm")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MostenireaWindowsForm")]
+[assembly: AssemblyProduct("MostenireWindowsForm")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("12778ce4-a425-4b08-8012-50a31f19e7fd")]
+[assembly: Guid("f8c18742-103f-4192-8bce-bbd68b96cbb5")]
 
 // Version information for an assembly consists of the following four values:
 //

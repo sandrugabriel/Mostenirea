@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{12778CE4-A425-4B08-8012-50A31F19E7FD}</ProjectGuid>
+    <ProjectGuid>{F8C18742-103F-4192-8BCE-BBD68B96CBB5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MostenireaWindowsForm</RootNamespace>
-    <AssemblyName>MostenireaWindowsForm</AssemblyName>
+    <RootNamespace>MostenireWindowsForm</RootNamespace>
+    <AssemblyName>MostenireWindowsForm</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mostenirea5\Birou.cs" />
+    <Compile Include="Mostenirea5\Comoda.cs" />
+    <Compile Include="Mostenirea5\ControllerMobila.cs" />
+    <Compile Include="Mostenirea5\Dulap.cs" />
+    <Compile Include="Mostenirea5\Mobila.cs" />
+    <Compile Include="Mostenirea5\Pat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

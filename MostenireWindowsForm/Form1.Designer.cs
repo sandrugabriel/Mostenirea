@@ -1,4 +1,4 @@
-﻿namespace MostenireaWindowsForm
+﻿namespace MostenireWindowsForm
 {
     partial class Form1
     {

@@ -15,8 +15,6 @@ class Program
 
 
 
-
-
 /*
 
         Admin admin1 = new Admin(true, 1, "gabi", "1234");
