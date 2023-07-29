@@ -11,7 +11,7 @@ namespace Mostenirea.Mostenire1
 
         private bool hasSidecar;
 
-        public Motorcycle(string brand, int year, bool hasSidecar) : base(brand, year)
+        public Motorcycle(int year, bool hasSidecar) : base(year)
         {
             this.hasSidecar = hasSidecar;
         }
