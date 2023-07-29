@@ -11,7 +11,7 @@ namespace Mostenirea.Mostenire1
 
         private int numOfDoors;
 
-        public Car(string brand, int year, int numOfDoors) : base(brand, year)
+        public Car(string brand, int year, int numOfDoors, string type) : base(brand, year,type)
         {
             this.numOfDoors = numOfDoors;
         }
@@ -19,6 +19,26 @@ namespace Mostenirea.Mostenire1
         public void Drive()
         {
             Console.WriteLine("The car is driving.");
+        }
+
+        public Car(string text):base(text)
+        {
+            string[] prop = text.Split(',');
+
+            this.numOfDoors = int.Parse(prop[3]);
+        }
+
+        public int NumOfDoors
+        {
+            get { return this.numOfDoors;}
+        }
+
+        public string descriereCar()
+        {
+            string t = base.descriereVehicle();
+
+            t += "Nr usi: " + numOfDoors.ToString() + "\n";
+            return t;
         }
 
     }

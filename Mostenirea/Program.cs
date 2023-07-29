@@ -1,6 +1,7 @@
 ﻿using Mostenirea.Mostenire1;
 using Mostenirea.Mostenire2;
 using Mostenirea.Mostenire3;
+using Mostenirea.Mostenire4;
 using System.Runtime.Intrinsics.X86;
 
 class Program
@@ -8,7 +9,15 @@ class Program
     static void Main(string[] args)
     {
 
+        ControllerAnimale controllerAnimale = new ControllerAnimale();
+        controllerAnimale.afisare();
 
+
+
+
+
+
+/*
 
         Admin admin1 = new Admin(true, 1, "gabi", "1234");
         Admin admin2 = new Admin(false, 2, "ana", "ana123");
@@ -37,7 +46,7 @@ class Program
                 Console.WriteLine("intrat");
             }
 
-        }
+        }*/
 
         /*
                 Admin admin1 = new Admin(true, 1, "gabi", "1234");
