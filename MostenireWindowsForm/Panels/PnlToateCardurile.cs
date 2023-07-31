@@ -22,9 +22,12 @@ namespace MostenireWindowsForm.Panels
             this.form = form1;
             this.controllerMobila = new ControllerMobila();
 
+            this.form.MinimumSize = new System.Drawing.Size(1458,717);
+            this.form.MaximumSize = new System.Drawing.Size(2500,900);
+
             //PnlToateCarudirle
             this.Name = "PnlToateCardurile";
-            this.Size = new System.Drawing.Size(1458, 717);
+            this.Size = new System.Drawing.Size(1458, 827);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14);
            // this.BackColor = System.Drawing.Color.Coral;
 
