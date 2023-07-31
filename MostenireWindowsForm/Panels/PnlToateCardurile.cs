@@ -27,9 +27,9 @@ namespace MostenireWindowsForm.Panels
 
             //PnlToateCarudirle
             this.Name = "PnlToateCardurile";
-            this.Size = new System.Drawing.Size(1458, 827);
+            this.Size = new System.Drawing.Size(1555, 840);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14);
-           // this.BackColor = System.Drawing.Color.Coral;
+            this.Location = new System.Drawing.Point(0, 140);
 
             listMobila = controllerMobila.getAll();
 

@@ -82,6 +82,12 @@
     <Compile Include="Mockups\MockupDulap.Designer.cs">
       <DependentUpon>MockupDulap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mockups\MockupMeniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockups\MockupMeniu.Designer.cs">
+      <DependentUpon>MockupMeniu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mostenirea5\Birou.cs" />
     <Compile Include="Mostenirea5\Comoda.cs" />
     <Compile Include="Mostenirea5\ControllerMobila.cs" />
@@ -98,6 +104,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Panels\PnlCardPat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panels\PnlMeniu.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Panels\PnlToateCardurile.cs">
@@ -122,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mockups\MockupDulap.resx">
       <DependentUpon>MockupDulap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mockups\MockupMeniu.resx">
+      <DependentUpon>MockupMeniu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

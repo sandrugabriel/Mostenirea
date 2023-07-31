@@ -18,9 +18,14 @@ namespace MostenireWindowsForm
         {
             InitializeComponent();
 
+            /*this.WindowState = FormWindowState.Maximized;
+
+            MessageBox.Show(this.Height.ToString());*/
+
             //Birou birou = new Birou("birou,12,795,1.14,1.31,1.87");
             this.Controls.Add(new PnlToateCardurile(this));
-
+            this.Controls.Add(new PnlMeniu(this));
+            
         }
     }
 }
