@@ -15,13 +15,13 @@ namespace MostenireWindowsForm
         [STAThread]
         static void Main()
         {
-           /* Application.EnableVisualStyles();
+            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());*/
-                
-            ControllerMobila controllerMobila = new ControllerMobila();
-            controllerMobila.afisare();
+            Application.Run(new Form1());
 
+            /*  ControllerMobila controllerMobila = new ControllerMobila();
+              controllerMobila.afisare();
+  */
         }
     }
 }

@@ -82,6 +82,18 @@
     <Compile Include="Mostenirea5\Dulap.cs" />
     <Compile Include="Mostenirea5\Mobila.cs" />
     <Compile Include="Mostenirea5\Pat.cs" />
+    <Compile Include="Panels\PnlCardBirou.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panels\PnlCardComoda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panels\PnlCardDulap.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panels\PnlCardPat.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Mockups\MockupBirou.resx">
@@ -118,8 +130,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Panels\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

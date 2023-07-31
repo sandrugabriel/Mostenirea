@@ -37,7 +37,7 @@
             // lbltype
             // 
             this.lbltype.AutoSize = true;
-            this.lbltype.Location = new System.Drawing.Point(14, 43);
+            this.lbltype.Location = new System.Drawing.Point(14, 23);
             this.lbltype.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbltype.Name = "lbltype";
             this.lbltype.Size = new System.Drawing.Size(70, 30);
@@ -47,7 +47,7 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(14, 102);
+            this.lblId.Location = new System.Drawing.Point(14, 77);
             this.lblId.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(39, 30);
@@ -57,7 +57,7 @@
             // lblLung
             // 
             this.lblLung.AutoSize = true;
-            this.lblLung.Location = new System.Drawing.Point(14, 156);
+            this.lblLung.Location = new System.Drawing.Point(14, 136);
             this.lblLung.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblLung.Name = "lblLung";
             this.lblLung.Size = new System.Drawing.Size(108, 30);
@@ -67,7 +67,7 @@
             // lblLagime
             // 
             this.lblLagime.AutoSize = true;
-            this.lblLagime.Location = new System.Drawing.Point(14, 208);
+            this.lblLagime.Location = new System.Drawing.Point(14, 199);
             this.lblLagime.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblLagime.Name = "lblLagime";
             this.lblLagime.Size = new System.Drawing.Size(94, 30);
@@ -78,7 +78,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(372, 343);
+            this.ClientSize = new System.Drawing.Size(302, 273);
             this.Controls.Add(this.lblLagime);
             this.Controls.Add(this.lblLung);
             this.Controls.Add(this.lblId);
