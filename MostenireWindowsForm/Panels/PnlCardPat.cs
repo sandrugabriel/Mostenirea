@@ -23,7 +23,7 @@ namespace MostenireWindowsForm.Panels
         {
             this.form = form;
             this.pat = pat1;
-
+           // MessageBox.Show("intrat");
 
             //PnlCardPat
             this.Name = "PnlCardPat";
@@ -60,6 +60,9 @@ namespace MostenireWindowsForm.Panels
             this.lblLungime.AutoSize = true;
             this.lblLungime.Location = new System.Drawing.Point(46, 199);
             this.lblLungime.Text = "Lungime: " + pat.Lungime.ToString();
+
+
+      
 
 
 

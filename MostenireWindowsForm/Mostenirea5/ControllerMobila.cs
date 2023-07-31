@@ -88,5 +88,11 @@ namespace MostenireWindowsForm.Mostenirea5
             }
         }
 
+        public List<Mobila> getAll()
+        {
+            return listMobila;
+        }
+
+
     }
 }

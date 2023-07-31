@@ -18,8 +18,8 @@ namespace MostenireWindowsForm
         {
             InitializeComponent();
 
-            Birou birou = new Birou("birou,12,795,1.14,1.31,1.87");
-            this.Controls.Add(new PnlCardBirou(this,birou));
+            //Birou birou = new Birou("birou,12,795,1.14,1.31,1.87");
+            this.Controls.Add(new PnlToateCardurile(this));
 
         }
     }

@@ -64,6 +64,12 @@
     <Compile Include="Mockups\MockupCardPat.Designer.cs">
       <DependentUpon>MockupCardPat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mockups\MockupCarduri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockups\MockupCarduri.Designer.cs">
+      <DependentUpon>MockupCarduri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mockups\MockupComoda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,13 +100,22 @@
     <Compile Include="Panels\PnlCardPat.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Panels\PnlToateCardurile.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mockups\MockupBirou.resx">
       <DependentUpon>MockupBirou.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mockups\MockupCardPat.resx">
       <DependentUpon>MockupCardPat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mockups\MockupCarduri.resx">
+      <DependentUpon>MockupCarduri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mockups\MockupComoda.resx">
       <DependentUpon>MockupComoda.cs</DependentUpon>
