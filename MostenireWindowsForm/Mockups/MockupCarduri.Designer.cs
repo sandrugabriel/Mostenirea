@@ -1,6 +1,6 @@
-﻿namespace MostenireWindowsForm
+﻿namespace MostenireWindowsForm.Mockups
 {
-    partial class Form1
+    partial class MockupCarduri
     {
         /// <summary>
         /// Required designer variable.
@@ -30,16 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // MockupCarduri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1440, 670);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.ClientSize = new System.Drawing.Size(1423, 679);
+            this.Name = "MockupCarduri";
+            this.Text = "MockupCarduri";
             this.ResumeLayout(false);
 
         }
@@ -47,4 +44,3 @@
         #endregion
     }
 }
-
