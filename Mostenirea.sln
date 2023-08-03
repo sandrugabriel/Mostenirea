@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste", "ExBazaRetineDeriva
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostenireWindowsForm", "MostenireWindowsForm\MostenireWindowsForm.csproj", "{F8C18742-103F-4192-8BCE-BBD68B96CBB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema-Mostenire1", "Tema-Mostenire1\Tema-Mostenire1.csproj", "{EAF3DCCD-AAF6-4C78-B113-9B2EE203D555}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F8C18742-103F-4192-8BCE-BBD68B96CBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8C18742-103F-4192-8BCE-BBD68B96CBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8C18742-103F-4192-8BCE-BBD68B96CBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAF3DCCD-AAF6-4C78-B113-9B2EE203D555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAF3DCCD-AAF6-4C78-B113-9B2EE203D555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAF3DCCD-AAF6-4C78-B113-9B2EE203D555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAF3DCCD-AAF6-4C78-B113-9B2EE203D555}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
