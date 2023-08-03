@@ -50,5 +50,12 @@ namespace MostenireWindowsForm.Mostenirea5
             return t;
         }
 
+        public string toSave()
+        {
+            string t = base.toSaveMobila();
+            t += lungime.ToString() + "," + latime.ToString();
+            return t;
+        }
+
     }
 }

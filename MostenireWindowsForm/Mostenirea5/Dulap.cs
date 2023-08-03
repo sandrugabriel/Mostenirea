@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace MostenireWindowsForm.Mostenirea5
 {
@@ -61,5 +62,11 @@ namespace MostenireWindowsForm.Mostenirea5
             return t;
         }
 
+        public string toSave()
+        {
+            string t = base.toSaveMobila();
+            t += oglinda.ToString() + "," + inaltime.ToString() + "," + lungime.ToString();
+            return t;
+        }
     }
 }

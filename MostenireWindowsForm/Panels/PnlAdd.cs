@@ -189,6 +189,7 @@ namespace MostenireWindowsForm.Panels
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(216, 79);
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new EventHandler(btnCancel_Click);
 
             // btnAdd
             this.btnAdd.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 16.8F);
@@ -321,6 +322,15 @@ namespace MostenireWindowsForm.Panels
                 form.Controls.Add(new PnlToateCardurile(form));
             }
 
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+
+            this.form.removepnl("PnlAdd");
+            this.form.Controls.Add(new PnlToateCardurile(form));
+            this.form.Controls.Add(new PnlMeniu(form));
 
         }
 
