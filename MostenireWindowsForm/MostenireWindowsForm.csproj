@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mockups\MockupAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockups\MockupAdd.Designer.cs">
+      <DependentUpon>MockupAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mockups\MockupBirou.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     <Compile Include="Mostenirea5\Dulap.cs" />
     <Compile Include="Mostenirea5\Mobila.cs" />
     <Compile Include="Mostenirea5\Pat.cs" />
+    <Compile Include="Panels\PnlAdd.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Panels\PnlCardBirou.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -116,6 +125,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mockups\MockupAdd.resx">
+      <DependentUpon>MockupAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mockups\MockupBirou.resx">
       <DependentUpon>MockupBirou.cs</DependentUpon>

@@ -92,7 +92,46 @@ namespace MostenireWindowsForm.Mostenirea5
         {
             return listMobila;
         }
+        public Mobila getMobilaById(int id)
+        {
 
+            for (int i = 0; i < listMobila.Count; i++)
+            {
+                if (listMobila[i].Id == id)
+                {
+                    return listMobila[i];
+                }
+            }
+
+            return null;
+        }
+
+        public int generareId()
+        {
+            Random random = new Random();
+
+            int id = random.Next();
+            while (this.getMobilaById(id) != null)
+            {
+
+                id = random.Next(36,1000);
+
+            }
+
+
+            return id;
+
+        }
+
+        public void save(string textul)
+        {
+
+            string text = textul;
+            string path = Application.StartupPath + @"/data/mobila.txt";
+            File.AppendAllText(path, text + "\n");
+
+
+        }
 
     }
 }
