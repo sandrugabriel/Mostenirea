@@ -62,5 +62,11 @@ namespace MostenireWindowsForm.Mostenirea5
             return t;
         }
 
+        public string toSave()
+        {
+            string t = base.toSaveMobila();
+            t += inaltime.ToString() + "," + lungime.ToString() + "," + lagime.ToString();
+            return t;
+        }
     }
 }

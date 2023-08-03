@@ -114,7 +114,7 @@ namespace MostenireWindowsForm.Mostenirea5
             while (this.getMobilaById(id) != null)
             {
 
-                id = random.Next(36,1000);
+                id = random.Next(36, 1000);
 
             }
 
@@ -131,6 +131,74 @@ namespace MostenireWindowsForm.Mostenirea5
             File.AppendAllText(path, text + "\n");
 
 
+        }
+
+        public string saveAllFisier()
+        {
+
+            string t = "";
+
+            for (int i = 0; i < listMobila.Count; i++)
+            {
+
+                if (listMobila[i] is Pat)
+                {
+                    Pat pat = listMobila[i] as Pat;
+                    t += pat.toSave() + "\n";
+                }
+                else if (listMobila[i] is Dulap)
+                {
+                    Dulap dulap = listMobila[i] as Dulap;
+                    t += dulap.toSave() + "\n";
+                }
+                else if (listMobila[i] is Comoda)
+                {
+                    Comoda com = listMobila[i] as Comoda;
+                    t += com.toSave() + "\n";
+                }
+                else if (listMobila[i] is Birou)
+                {
+                    Birou bir = listMobila[i] as Birou;
+                    t += bir.toSave() + "\n";
+                }
+            }
+
+
+            return t;
+        }
+
+        public int pozId(int id)
+        {
+
+            for (int i = 0; i < listMobila.Count; i++)
+            {
+                if (listMobila[i].Id == id)
+                    return i;
+            }
+
+            return -1;
+        }
+
+        public void stergere(int id)
+        {
+
+            int p = pozId(id);
+
+            listMobila.RemoveAt(p);
+
+
+        }
+
+        public void delete(int id)
+        {
+
+            this.stergere(id);
+
+            string path = Application.StartupPath + @"/data/mobila.txt";
+            StreamWriter streamWriter = new StreamWriter(path);
+            streamWriter.Write(this.saveAllFisier());
+
+            streamWriter.Close();
         }
 
     }

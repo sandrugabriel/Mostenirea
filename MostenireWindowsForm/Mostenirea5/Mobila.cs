@@ -61,5 +61,10 @@ namespace MostenireWindowsForm.Mostenirea5
             return t;
         }
 
+        public string toSaveMobila()
+        {
+            return type + "," + id.ToString() + "," + pret.ToString() + ",";
+        }
+
     }
 }

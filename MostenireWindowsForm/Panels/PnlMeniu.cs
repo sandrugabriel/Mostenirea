@@ -21,7 +21,7 @@ namespace MostenireWindowsForm.Panels
             this.form = form1;
 
             //PnlMeniu
-            this.Size = new System.Drawing.Size(1555, 180);
+            this.Size = new System.Drawing.Size(1555, 150);
             this.Name = "PnlMeniu";
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14);
@@ -49,6 +49,7 @@ namespace MostenireWindowsForm.Panels
             this.btnAdd.Click += new EventHandler(btnAdd_Click);
             this.btnAdd.BackColor = System.Drawing.ColorTranslator.FromHtml("#5F7ADB");
             this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.SendToBack();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

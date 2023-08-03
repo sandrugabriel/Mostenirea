@@ -20,13 +20,16 @@ namespace MostenireWindowsForm.Panels
         Label lblInaltime;
         Label lblLungime;
 
+        Button btnDelete;
+
+        ControllerMobila controllerMobila;
 
         public PnlCardBirou(Form1 form1, Birou birou1)
         {
 
             this.form = form1;
             this.birou = birou1;
-
+            this.controllerMobila = new ControllerMobila();
 
             //PnlCardBirou
             this.Name = "PnlCardBirou";
@@ -39,12 +42,14 @@ namespace MostenireWindowsForm.Panels
             this.lblType = new Label();
             this.lblId = new Label();
             this.lblLatime = new Label();
+            this.btnDelete = new Button();
 
             this.Controls.Add(this.lblType);
             this.Controls.Add(this.lblLungime);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.lblLatime);
             this.Controls.Add(this.lblInaltime);
+            this.Controls.Add(this.btnDelete);
 
             //lblIType
             this.lblType.Text = "Type: " + birou.Type;
@@ -76,10 +81,26 @@ namespace MostenireWindowsForm.Panels
             this.lblLungime.Text = "Lungime: " + birou.Lungime.ToString();
             this.lblLungime.ForeColor = System.Drawing.Color.White;
 
+            //btnDelete
+            this.btnDelete.Location = new System.Drawing.Point(175, 15);
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Size = new System.Drawing.Size(120, 50);
+            this.btnDelete.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E3239");
+            this.btnDelete.Click += new EventHandler(btnDelete_Click);
 
 
         }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+            controllerMobila.delete(birou.Id);
+
+            form.removepnl("PnlToateCardurile");
+            form.Controls.Add(new PnlToateCardurile(form));
+
+        }
 
     }
 }

@@ -20,11 +20,16 @@ namespace MostenireWindowsForm.Panels
         Label lblInaltime;
         Label lblLungime;
 
+        Button btnDelete;
+
+        ControllerMobila controllerMobila;
+
         public PnlCardComoda(Form1 form1, Comoda comoda1)
         {
             
             this.form = form1;
             this.comoda = comoda1;
+            this.controllerMobila = new ControllerMobila();
 
             //PnlCardComoda
             this.Name = "PnlCardComoda";
@@ -37,12 +42,14 @@ namespace MostenireWindowsForm.Panels
             this.lblType = new Label();
             this.lblId = new Label();
             this.lblCuloare = new Label();
+            this.btnDelete = new Button();
 
             this.Controls.Add(this.lblType);
             this.Controls.Add(this.lblLungime);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.lblCuloare);
             this.Controls.Add(this.lblInaltime);
+            this.Controls.Add(this.btnDelete);
 
             lblType.ForeColor = lblLungime.ForeColor = lblInaltime.ForeColor = lblId.ForeColor = lblCuloare.ForeColor = System.Drawing.Color.White;
 
@@ -71,11 +78,26 @@ namespace MostenireWindowsForm.Panels
             this.lblLungime.Location = new System.Drawing.Point(46, 279);
             this.lblLungime.Text = "Lungime: " + comoda.Lungime.ToString();
 
-
+            //btnDelete
+            this.btnDelete.Location = new System.Drawing.Point(181, 15);
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Size = new System.Drawing.Size(120, 50);
+            this.btnDelete.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E3239");
+            this.btnDelete.Click += new EventHandler(btnDelete_Click);
 
 
         }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+            controllerMobila.delete(comoda.Id);
+
+            form.removepnl("PnlToateCardurile");
+            form.Controls.Add(new PnlToateCardurile(form));
+
+        }
 
 
     }

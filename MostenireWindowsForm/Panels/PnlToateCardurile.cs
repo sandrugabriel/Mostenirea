@@ -37,7 +37,7 @@ namespace MostenireWindowsForm.Panels
             listMobila = controllerMobila.getAll();
 
             createCard(4);
-
+            this.BringToFront();
         }
 
         public void createCard(int nr)
