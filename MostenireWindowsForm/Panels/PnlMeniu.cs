@@ -25,6 +25,7 @@ namespace MostenireWindowsForm.Panels
             this.Name = "PnlMeniu";
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14);
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E3239");
 
             lblTitlu = new Label();
             btnAdd = new Button();
@@ -37,7 +38,8 @@ namespace MostenireWindowsForm.Panels
             this.lblTitlu.Text = "Mobila";
             this.lblTitlu.AutoSize = true;
             this.lblTitlu.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 27);
-            this.lblTitlu.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblTitlu.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E3239");
+            this.lblTitlu.ForeColor = System.Drawing.Color.White;
 
             //btnAdd
             this.btnAdd.Location = new System.Drawing.Point(1294, 34);
@@ -45,14 +47,16 @@ namespace MostenireWindowsForm.Panels
             this.btnAdd.Size = new System.Drawing.Size(220, 66);
             this.btnAdd.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAdd.Click += new EventHandler(btnAdd_Click);
-
+            this.btnAdd.BackColor = System.Drawing.ColorTranslator.FromHtml("#5F7ADB");
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
-
-
+            this.form.removepnl("PnlMeniu");
+            this.form.removepnl("PnlToateCardurile");
+            this.form.Controls.Add(new PnlAdd(form));
         }
 
     }

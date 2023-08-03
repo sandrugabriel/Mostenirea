@@ -30,7 +30,7 @@ namespace MostenireWindowsForm.Panels
             this.Name = "PnlCardComoda";
             this.Size = new System.Drawing.Size(320, 320);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14);
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#5F7ADB");
 
             this.lblInaltime = new Label();
             this.lblLungime = new Label();
@@ -43,6 +43,8 @@ namespace MostenireWindowsForm.Panels
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.lblCuloare);
             this.Controls.Add(this.lblInaltime);
+
+            lblType.ForeColor = lblLungime.ForeColor = lblInaltime.ForeColor = lblId.ForeColor = lblCuloare.ForeColor = System.Drawing.Color.White;
 
             //lblIType
             this.lblType.Text = "Type: " + comoda.Type;

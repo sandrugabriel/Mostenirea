@@ -15,7 +15,7 @@ namespace MostenireWindowsForm.Panels
         Form1 form;
         List<Mobila> listMobila;
         ControllerMobila controllerMobila;
-
+        Label lbl1;
         public PnlToateCardurile(Form1 form1)
         {
 
@@ -27,9 +27,12 @@ namespace MostenireWindowsForm.Panels
 
             //PnlToateCarudirle
             this.Name = "PnlToateCardurile";
-            this.Size = new System.Drawing.Size(1555, 840);
+            this.Size = new System.Drawing.Size(1555, 750);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14);
-            this.Location = new System.Drawing.Point(0, 140);
+            this.Location = new System.Drawing.Point(0, 135);
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#2E3239");
+
+
 
             listMobila = controllerMobila.getAll();
 
@@ -41,9 +44,14 @@ namespace MostenireWindowsForm.Panels
         {
             this.Controls.Clear();
 
+            lbl1 = new Label();
+            lbl1.Location = new System.Drawing.Point(250, 1050);
+
+           // this.Controls.Add(lbl1);
+
             int x, y;
 
-            x = 12;
+            x = 75;
             y = 13;
 
             int ct = 0;
@@ -82,12 +90,12 @@ namespace MostenireWindowsForm.Panels
                     this.Controls.Add(pnlCardDulap);
                 }
 
-                x +=325;
+                x +=350;
 
                 if (ct % nr == 0)
                 {
-                    x = 12;
-                    y +=325;
+                    x = 75;
+                    y +=340;
                 }
 
                 if (y > this.Height)

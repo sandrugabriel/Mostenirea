@@ -29,7 +29,7 @@ namespace MostenireWindowsForm.Panels
             this.Name = "PnlCardPat";
             this.Size = new System.Drawing.Size(320, 320);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14);
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#5F7ADB");
 
             this.lblLatime = new Label();
             this.lblLungime = new Label();
@@ -40,6 +40,8 @@ namespace MostenireWindowsForm.Panels
             this.Controls.Add(this.lblLungime);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.lblLatime);
+
+            lblType.ForeColor = lblLungime.ForeColor = lblId.ForeColor = lblLatime.ForeColor = System.Drawing.Color.White;
 
             //lblIType
             this.lblType.Text = "Type: " + pat.Type;

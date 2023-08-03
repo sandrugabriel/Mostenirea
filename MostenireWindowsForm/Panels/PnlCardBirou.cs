@@ -32,7 +32,7 @@ namespace MostenireWindowsForm.Panels
             this.Name = "PnlCardBirou";
             this.Size = new System.Drawing.Size(320, 320);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14);
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#5F7ADB");
 
             this.lblInaltime = new Label();
             this.lblLungime = new Label();
@@ -50,27 +50,31 @@ namespace MostenireWindowsForm.Panels
             this.lblType.Text = "Type: " + birou.Type;
             this.lblType.Location = new System.Drawing.Point(46, 29);
             this.lblType.AutoSize = true;
+            this.lblType.ForeColor = System.Drawing.Color.White;
 
             //lblId
             this.lblId.AutoSize = true;
             this.lblId.Location = new System.Drawing.Point(46, 88);
             this.lblId.Text = "Id: " + birou.Id.ToString();
+            this.lblId.ForeColor = System.Drawing.Color.White;
 
             //lblLatime
             this.lblLatime.AutoSize = true;
             this.lblLatime.Location = new System.Drawing.Point(46, 151);
             this.lblLatime.Text = "Latime: " + birou.Lagime.ToString();
+            this.lblLatime.ForeColor = System.Drawing.Color.White;
 
             //lblInaltime
             this.lblInaltime.AutoSize = true;
             this.lblInaltime.Location = new System.Drawing.Point(46, 219);
             this.lblInaltime.Text = "Inaltime: " + birou.Inaltime.ToString();
+            this.lblInaltime.ForeColor = System.Drawing.Color.White;
 
             //lblLungime
             this.lblLungime.AutoSize = true;
             this.lblLungime.Location = new System.Drawing.Point(46, 279);
             this.lblLungime.Text = "Lungime: " + birou.Lungime.ToString();
-
+            this.lblLungime.ForeColor = System.Drawing.Color.White;
 
 
 
