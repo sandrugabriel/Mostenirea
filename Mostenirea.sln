@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema-Mostenire1", "Tema-Mos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema-Mostenire2", "Tema-Mostenire2\Tema-Mostenire2.csproj", "{ACB342BE-ABFF-4935-B022-B54B7068EC95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema-Mostenirea3", "Tema-Mostenirea3\Tema-Mostenirea3.csproj", "{A7478DD6-60BF-432C-895E-685AD98FDA81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{ACB342BE-ABFF-4935-B022-B54B7068EC95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACB342BE-ABFF-4935-B022-B54B7068EC95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACB342BE-ABFF-4935-B022-B54B7068EC95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7478DD6-60BF-432C-895E-685AD98FDA81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7478DD6-60BF-432C-895E-685AD98FDA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7478DD6-60BF-432C-895E-685AD98FDA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7478DD6-60BF-432C-895E-685AD98FDA81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
