@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F8C18742-103F-4192-8BCE-BBD68B96CBB5}</ProjectGuid>
+    <ProjectGuid>{ACB342BE-ABFF-4935-B022-B54B7068EC95}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MostenireWindowsForm</RootNamespace>
-    <AssemblyName>MostenireWindowsForm</AssemblyName>
+    <RootNamespace>Tema_Mostenire2</RootNamespace>
+    <AssemblyName>Tema-Mostenire2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,67 +52,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mockups\MockupAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mockups\MockupAdd.Designer.cs">
-      <DependentUpon>MockupAdd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mockups\MockupBirou.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mockups\MockupBirou.Designer.cs">
-      <DependentUpon>MockupBirou.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mockups\MockupCardPat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mockups\MockupCardPat.Designer.cs">
-      <DependentUpon>MockupCardPat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mockups\MockupCarduri.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mockups\MockupCarduri.Designer.cs">
-      <DependentUpon>MockupCarduri.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mockups\MockupComoda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mockups\MockupComoda.Designer.cs">
-      <DependentUpon>MockupComoda.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mockups\MockupDulap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mockups\MockupDulap.Designer.cs">
-      <DependentUpon>MockupDulap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mockups\MockupMeniu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mockups\MockupMeniu.Designer.cs">
-      <DependentUpon>MockupMeniu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mostenirea4\Birou.cs" />
-    <Compile Include="Mostenirea4\Comoda.cs" />
-    <Compile Include="Mostenirea4\ControllerMobila.cs" />
-    <Compile Include="Mostenirea4\Dulap.cs" />
-    <Compile Include="Mostenirea4\Mobila.cs" />
-    <Compile Include="Mostenirea4\Pat.cs" />
+    <Compile Include="Mostenire2\ControllerElectro.cs" />
+    <Compile Include="Mostenire2\Electronice.cs" />
+    <Compile Include="Mostenire2\Mobil.cs" />
+    <Compile Include="Mostenire2\SmartWatch.cs" />
+    <Compile Include="Mostenire2\SoundBar.cs" />
+    <Compile Include="Mostenire2\Televizor.cs" />
     <Compile Include="Panels\PnlAdd.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Panels\PnlCardBirou.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Panels\PnlCardComoda.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Panels\PnlCardDulap.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Panels\PnlCardPat.cs">
+    <Compile Include="Panels\PnlCard.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Panels\PnlMeniu.cs">
@@ -125,27 +74,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mockups\MockupAdd.resx">
-      <DependentUpon>MockupAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mockups\MockupBirou.resx">
-      <DependentUpon>MockupBirou.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mockups\MockupCardPat.resx">
-      <DependentUpon>MockupCardPat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mockups\MockupCarduri.resx">
-      <DependentUpon>MockupCarduri.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mockups\MockupComoda.resx">
-      <DependentUpon>MockupComoda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mockups\MockupDulap.resx">
-      <DependentUpon>MockupDulap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mockups\MockupMeniu.resx">
-      <DependentUpon>MockupMeniu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -169,6 +97,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
