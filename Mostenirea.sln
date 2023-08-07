@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema-Mostenire2", "Tema-Mos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema-Mostenirea3", "Tema-Mostenirea3\Tema-Mostenirea3.csproj", "{A7478DD6-60BF-432C-895E-685AD98FDA81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polimorfismul", "Polimorfizul\Polimorfismul.csproj", "{B89BCA09-5C51-49D3-82A3-763FDF910B17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polimorfismul", "Polimorfizul\Polimorfismul.csproj", "{B89BCA09-5C51-49D3-82A3-763FDF910B17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExPolimorfismul", "ExPolimorfismul\ExPolimorfismul.csproj", "{2E2B11BA-F170-4986-8EC3-9C212525F3DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{B89BCA09-5C51-49D3-82A3-763FDF910B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B89BCA09-5C51-49D3-82A3-763FDF910B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B89BCA09-5C51-49D3-82A3-763FDF910B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E2B11BA-F170-4986-8EC3-9C212525F3DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E2B11BA-F170-4986-8EC3-9C212525F3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E2B11BA-F170-4986-8EC3-9C212525F3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E2B11BA-F170-4986-8EC3-9C212525F3DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
