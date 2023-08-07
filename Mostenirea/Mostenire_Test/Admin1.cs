@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace Mostenirea.Mostenire3
 {
-    public class Admin : Persoane
+    public class Admin1 : Persoane
     {
 
         private bool accesFull;
         private DateTime dataIntrari;
         private bool genul;
 
-        public Admin(bool accesFull, int id, string name, string password):base(id,name,password) {
+        public Admin1(bool accesFull, int id, string name, string password):base(id,name,password) {
         
             this.accesFull = accesFull;
         
         }
 
-        public Admin(bool accesFull, DateTime data, int id, string name, string password) : base(id,name,password)
+        public Admin1(bool accesFull, DateTime data, int id, string name, string password) : base(id,name,password)
         {
             this.accesFull = accesFull;
             this.dataIntrari = data;
         }
 
-        public Admin(bool acces,DateTime data,bool genul, int id, string name, string password):base(id,name,password)
+        public Admin1(bool acces,DateTime data,bool genul, int id, string name, string password):base(id,name,password)
         {
             this.accesFull = acces;
             this.dataIntrari = data;

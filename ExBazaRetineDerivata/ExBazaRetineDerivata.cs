@@ -33,8 +33,8 @@ namespace ExBazaRetineDerivata
         public void Return_CalledWhen_PersoaneDif()
         {
             //Given
-            Admin admin1 = new Admin(true, 1, "gabi", "1234");
-            Admin admin2 = new Admin(false, 2, "ana", "ana123");
+            Admin1 admin1 = new Admin1(true, 1, "gabi", "1234");
+            Admin1 admin2 = new Admin1(false, 2, "ana", "ana123");
 
             User user1 = new User(19, 3, "test", "tes1234");
             User user2 = new User(18, 4, "test2", "test21234");
@@ -60,7 +60,7 @@ namespace ExBazaRetineDerivata
             for(int i=0;i<persoane.Count;i++)
             {
                 Console.WriteLine(persoane[i].descriere());
-                if (persoane[i] is Admin){
+                if (persoane[i] is Admin1){
                     //conversie de la  baza la deriivta
                     Console.WriteLine("intrat");
                     ctAdmin++;
