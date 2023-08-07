@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mostenirea\Mostenirea.csproj" />
+    <ProjectReference Include="..\Polimorfizul\Polimorfismul.csproj" />
   </ItemGroup>
 
 </Project>
