@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D600B5C9-85DA-4079-B79F-963E0D66E916}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>View</RootNamespace>
+    <AssemblyName>View</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AlphaBlendTextBox">
+      <HintPath>..\..\..\..\..\..\Users\gabi2\Downloads\AlphaBlendTextBox_demo\AlphaBlendTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\..\Users\gabi2\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Siticone.Desktop.UI">
+      <HintPath>..\..\..\..\..\..\Users\gabi2\Downloads\Siticone.Desktop.UI.2.0.9.0\Siticone.Desktop.UI.2.0.0.9\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ControllerDetalii.cs" />
+    <Compile Include="Controllers\ControllerFigura.cs" />
+    <Compile Include="Controllers\ControllerClient.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mockups\MockupAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockups\MockupAdd.Designer.cs">
+      <DependentUpon>MockupAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mockups\MockupCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockups\MockupCard.Designer.cs">
+      <DependentUpon>MockupCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mockups\MockupCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockups\MockupCards.Designer.cs">
+      <DependentUpon>MockupCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mockups\MockupHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockups\MockupHome.Designer.cs">
+      <DependentUpon>MockupHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mockups\MockupLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockups\MockupLogin.Designer.cs">
+      <DependentUpon>MockupLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mockups\MockupSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mockups\MockupSignUp.Designer.cs">
+      <DependentUpon>MockupSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Figurile\Cerc.cs" />
+    <Compile Include="Models\Figurile\Dreptunghi.cs" />
+    <Compile Include="Models\Figurile\Figura.cs" />
+    <Compile Include="Models\Figurile\Linie.cs" />
+    <Compile Include="Models\Figurile\Punct.cs" />
+    <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\DetaliDesen.cs" />
+    <Compile Include="Panels\PnlAdd.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panels\PnlCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panels\PnlHome.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panels\PnlLogin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panels\PnlSignUp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panels\PnlToateCardurile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mockups\MockupAdd.resx">
+      <DependentUpon>MockupAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mockups\MockupCard.resx">
+      <DependentUpon>MockupCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mockups\MockupCards.resx">
+      <DependentUpon>MockupCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mockups\MockupHome.resx">
+      <DependentUpon>MockupHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mockups\MockupLogin.resx">
+      <DependentUpon>MockupLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mockups\MockupSignUp.resx">
+      <DependentUpon>MockupSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_sign-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-button-of-three-horizontal-lines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-button-of-three-horizontal-lines %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %281%29 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %281%29 %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorite %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gallery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %281%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %283%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %283%29 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %283%29 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %283%29 %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorite %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorite %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like %282%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorite %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %281%294.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %283%29 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %281%295.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %281%296.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %281%297.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %283%29 %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient %282%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient5.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
